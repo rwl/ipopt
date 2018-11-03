@@ -12,7 +12,7 @@ OBJS = callbackfunctions.o \
        options.o \
        sparsematrix.o
 
-CXXFLAGS = -fPIC -O3 -DIPOPT_BUILD -DMATLAB_MEXFILE -DHAVE_CSTDDEF
+CXXFLAGS = -fPIC -std=c++11 -O3 -DIPOPT_BUILD -DMATLAB_MEXFILE -DHAVE_CSTDDEF
 
 INCL = `pkg-config --cflags ipopt` -I`mkoctfile -p OCTINCLUDEDIR`
 LIBS = `pkg-config --libs ipopt`
