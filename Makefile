@@ -14,7 +14,7 @@ OBJS = callbackfunctions.o \
 
 CXXFLAGS = -fPIC -O3 -DIPOPT_BUILD -DMATLAB_MEXFILE -DHAVE_CSTDDEF
 
-INCL = `pkg-config --cflags ipopt` -I/usr/include/octave-4.0.2/octave -I/usr/include/octave-4.0.3/octave
+INCL = `pkg-config --cflags ipopt` -I/usr/include/octave-4.0.2/octave -I/usr/include/octave-4.0.3/octave -I/usr/include/octave-4.2.2/octave
 LIBS = `pkg-config --libs ipopt`
 
 all: ipopt.mex
